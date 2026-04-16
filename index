@@ -65,7 +65,7 @@
     <div class="topbar">長野県イベントマップ</div>
     <div class="frame-wrap">
       <iframe
-        src="YOUR_GAS_URL?page=lite"
+        src="https://script.google.com/macros/s/AKfycbzFEO6b_wyAYPd2irqXMLDsC_gsf_uofdhbZNJvAZjnJ6__bBJQhhngYACOQ3Ql17M/exec?page=lite"
         title="長野県イベントマップ"
         loading="eager"
         referrerpolicy="strict-origin-when-cross-origin">
