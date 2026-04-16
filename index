@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>長野県イベントマップ</title>
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: #f3f5f7;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+    }
+
+    body {
+      overflow: hidden;
+    }
+
+    .app {
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .topbar {
+      flex: 0 0 auto;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      background: #ffffff;
+      border-bottom: 1px solid #dfe3e8;
+      font-size: 16px;
+      font-weight: 700;
+      color: #1f2937;
+    }
+
+    .frame-wrap {
+      flex: 1 1 auto;
+      min-height: 0;
+      background: #f3f5f7;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: #f3f5f7;
+    }
+
+    .fallback {
+      padding: 16px;
+      font-size: 14px;
+      color: #475467;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="topbar">長野県イベントマップ</div>
+    <div class="frame-wrap">
+      <iframe
+        src="YOUR_GAS_URL?page=lite"
+        title="長野県イベントマップ"
+        loading="eager"
+        referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+    </div>
+  </div>
+
+  <noscript>
+    <div class="fallback">
+      このページの表示には JavaScript が必要です。
+    </div>
+  </noscript>
+</body>
+</html>
